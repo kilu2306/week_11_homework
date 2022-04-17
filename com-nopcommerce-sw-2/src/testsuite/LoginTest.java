@@ -61,7 +61,7 @@ public class LoginTest extends BaseTest {
         driver.findElement(By.xpath("//button[contains(text(),'Log in')]")).click();
         //actaultext per requirement
         String actualtext=driver.findElement(By.xpath("//body/div[6]/div[3]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/form[1]/div[1]")).getText();
-        String expactedTestelemnt = "Login was unsuccessful.Please correct the errors and try again.\n"+"No customer account found";
+        String expactedTestelemnt = "Login was unsuccessful. Please correct the errors and try again.\n"+"No customer account found";
         Assert.assertEquals("error message not dsiplayed ", expactedTestelemnt, actualtext);
     }
     @After
